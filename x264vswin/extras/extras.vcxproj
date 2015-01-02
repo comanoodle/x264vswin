@@ -10,6 +10,19 @@
       <Platform>Win32</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\extras\avisynth_c.h" />
+    <ClInclude Include="..\..\extras\avxsynth_c.h" />
+    <ClInclude Include="..\..\extras\cl.h" />
+    <ClInclude Include="..\..\extras\cl_platform.h" />
+    <ClInclude Include="..\..\extras\getopt.h" />
+    <ClInclude Include="..\..\extras\intel_dispatcher.h" />
+    <ClInclude Include="..\..\extras\inttypes.h" />
+    <ClInclude Include="..\..\extras\stdint.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\extras\getopt.c" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{E8EC549E-B06D-4A67-B4C3-C360BBAE43DE}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
@@ -70,9 +83,6 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <Text Include="ReadMe.txt" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

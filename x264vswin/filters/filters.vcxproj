@@ -10,6 +10,12 @@
       <Platform>Win32</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\filters\filters.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\filters\filters.h" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{853B7F7B-B2D9-4C88-911A-EDB50B566E09}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
@@ -70,9 +76,6 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <Text Include="ReadMe.txt" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

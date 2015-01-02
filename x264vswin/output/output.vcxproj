@@ -10,6 +10,20 @@
       <Platform>Win32</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\output\flv.c" />
+    <ClCompile Include="..\..\output\flv_bytestream.c" />
+    <ClCompile Include="..\..\output\matroska.c" />
+    <ClCompile Include="..\..\output\matroska_ebml.c" />
+    <ClCompile Include="..\..\output\mp4.c" />
+    <ClCompile Include="..\..\output\mp4_lsmash.c" />
+    <ClCompile Include="..\..\output\raw.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\output\flv_bytestream.h" />
+    <ClInclude Include="..\..\output\matroska_ebml.h" />
+    <ClInclude Include="..\..\output\output.h" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{6200AE40-457D-4DF1-BF91-91675D231A91}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
@@ -70,9 +84,6 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <Text Include="ReadMe.txt" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

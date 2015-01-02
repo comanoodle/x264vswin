@@ -10,6 +10,21 @@
       <Platform>Win32</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\filters\video\cache.c" />
+    <ClCompile Include="..\..\filters\video\crop.c" />
+    <ClCompile Include="..\..\filters\video\depth.c" />
+    <ClCompile Include="..\..\filters\video\fix_vfr_pts.c" />
+    <ClCompile Include="..\..\filters\video\internal.c" />
+    <ClCompile Include="..\..\filters\video\resize.c" />
+    <ClCompile Include="..\..\filters\video\select_every.c" />
+    <ClCompile Include="..\..\filters\video\source.c" />
+    <ClCompile Include="..\..\filters\video\video.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\filters\video\internal.h" />
+    <ClInclude Include="..\..\filters\video\video.h" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{E786D70A-A589-4672-9137-72F8E938D8BB}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
@@ -70,9 +85,6 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <Text Include="ReadMe.txt" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

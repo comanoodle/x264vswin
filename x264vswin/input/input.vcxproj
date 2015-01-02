@@ -10,6 +10,19 @@
       <Platform>Win32</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\input\avs.c" />
+    <ClCompile Include="..\..\input\ffms.c" />
+    <ClCompile Include="..\..\input\input.c" />
+    <ClCompile Include="..\..\input\lavf.c" />
+    <ClCompile Include="..\..\input\raw.c" />
+    <ClCompile Include="..\..\input\thread.c" />
+    <ClCompile Include="..\..\input\timecode.c" />
+    <ClCompile Include="..\..\input\y4m.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\input\input.h" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{3322297C-C787-49C2-994A-DA539460CE53}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
@@ -70,9 +83,6 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <Text Include="ReadMe.txt" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
