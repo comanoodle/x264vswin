@@ -137,6 +137,9 @@
     <ClInclude Include="..\..\common\win32thread.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\common\x86\dct.h">
       <Filter>asm</Filter>
     </ClInclude>
@@ -155,67 +158,64 @@
     <ClInclude Include="..\..\common\x86\util.h">
       <Filter>asm</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\config.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\..\common\x86\bitstream-a.asm">
+    <YASM Include="..\..\common\x86\bitstream-a.asm">
       <Filter>asm</Filter>
-    </None>
-    <None Include="..\..\common\x86\cabac-a.asm">
+    </YASM>
+    <YASM Include="..\..\common\x86\cabac-a.asm">
       <Filter>asm</Filter>
-    </None>
-    <None Include="..\..\common\x86\const-a.asm">
+    </YASM>
+    <YASM Include="..\..\common\x86\const-a.asm">
       <Filter>asm</Filter>
-    </None>
-    <None Include="..\..\common\x86\cpu-a.asm">
+    </YASM>
+    <YASM Include="..\..\common\x86\cpu-a.asm">
       <Filter>asm</Filter>
-    </None>
-    <None Include="..\..\common\x86\dct-32.asm">
+    </YASM>
+    <YASM Include="..\..\common\x86\dct-32.asm">
       <Filter>asm</Filter>
-    </None>
-    <None Include="..\..\common\x86\dct-64.asm">
+    </YASM>
+    <YASM Include="..\..\common\x86\dct-64.asm">
       <Filter>asm</Filter>
-    </None>
-    <None Include="..\..\common\x86\dct-a.asm">
+    </YASM>
+    <YASM Include="..\..\common\x86\dct-a.asm">
       <Filter>asm</Filter>
-    </None>
-    <None Include="..\..\common\x86\deblock-a.asm">
+    </YASM>
+    <YASM Include="..\..\common\x86\deblock-a.asm">
       <Filter>asm</Filter>
-    </None>
-    <None Include="..\..\common\x86\mc-a.asm">
+    </YASM>
+    <YASM Include="..\..\common\x86\mc-a.asm">
       <Filter>asm</Filter>
-    </None>
-    <None Include="..\..\common\x86\mc-a2.asm">
+    </YASM>
+    <YASM Include="..\..\common\x86\mc-a2.asm">
       <Filter>asm</Filter>
-    </None>
-    <None Include="..\..\common\x86\pixel-32.asm">
+    </YASM>
+    <YASM Include="..\..\common\x86\pixel-32.asm">
       <Filter>asm</Filter>
-    </None>
-    <None Include="..\..\common\x86\pixel-a.asm">
+    </YASM>
+    <YASM Include="..\..\common\x86\pixel-a.asm">
       <Filter>asm</Filter>
-    </None>
-    <None Include="..\..\common\x86\predict-a.asm">
+    </YASM>
+    <YASM Include="..\..\common\x86\predict-a.asm">
       <Filter>asm</Filter>
-    </None>
-    <None Include="..\..\common\x86\quant-a.asm">
+    </YASM>
+    <YASM Include="..\..\common\x86\quant-a.asm">
       <Filter>asm</Filter>
-    </None>
-    <None Include="..\..\common\x86\sad16-a.asm">
+    </YASM>
+    <YASM Include="..\..\common\x86\sad16-a.asm">
       <Filter>asm</Filter>
-    </None>
-    <None Include="..\..\common\x86\sad-a.asm">
+    </YASM>
+    <YASM Include="..\..\common\x86\sad-a.asm">
       <Filter>asm</Filter>
-    </None>
-    <None Include="..\..\common\x86\trellis-64.asm">
+    </YASM>
+    <YASM Include="..\..\common\x86\trellis-64.asm">
       <Filter>asm</Filter>
-    </None>
-    <None Include="..\..\common\x86\x86inc.asm">
+    </YASM>
+    <YASM Include="..\..\common\x86\x86inc.asm">
       <Filter>asm</Filter>
-    </None>
-    <None Include="..\..\common\x86\x86util.asm">
+    </YASM>
+    <YASM Include="..\..\common\x86\x86util.asm">
       <Filter>asm</Filter>
-    </None>
+    </YASM>
   </ItemGroup>
 </Project>
