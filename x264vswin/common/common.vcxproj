@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{2B83D025-A07C-4BCB-8EA4-AA9D5CE70C19}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>common</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\common\bitstream.c" />
+    <ClCompile Include="..\..\common\cabac.c" />
+    <ClCompile Include="..\..\common\common.c" />
+    <ClCompile Include="..\..\common\cpu.c" />
+    <ClCompile Include="..\..\common\dct.c" />
+    <ClCompile Include="..\..\common\deblock.c" />
+    <ClCompile Include="..\..\common\frame.c" />
+    <ClCompile Include="..\..\common\macroblock.c" />
+    <ClCompile Include="..\..\common\mc.c" />
+    <ClCompile Include="..\..\common\mvpred.c" />
+    <ClCompile Include="..\..\common\opencl.c" />
+    <ClCompile Include="..\..\common\osdep.c" />
+    <ClCompile Include="..\..\common\pixel.c" />
+    <ClCompile Include="..\..\common\predict.c" />
+    <ClCompile Include="..\..\common\quant.c" />
+    <ClCompile Include="..\..\common\rectangle.c" />
+    <ClCompile Include="..\..\common\set.c" />
+    <ClCompile Include="..\..\common\threadpool.c" />
+    <ClCompile Include="..\..\common\vlc.c" />
+    <ClCompile Include="..\..\common\win32thread.c" />
+    <ClCompile Include="..\..\common\x86\mc-c.c" />
+    <ClCompile Include="..\..\common\x86\predict-c.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\common\bitstream.h" />
+    <ClInclude Include="..\..\common\cabac.h" />
+    <ClInclude Include="..\..\common\common.h" />
+    <ClInclude Include="..\..\common\cpu.h" />
+    <ClInclude Include="..\..\common\dct.h" />
+    <ClInclude Include="..\..\common\frame.h" />
+    <ClInclude Include="..\..\common\macroblock.h" />
+    <ClInclude Include="..\..\common\mc.h" />
+    <ClInclude Include="..\..\common\opencl.h" />
+    <ClInclude Include="..\..\common\osdep.h" />
+    <ClInclude Include="..\..\common\pixel.h" />
+    <ClInclude Include="..\..\common\predict.h" />
+    <ClInclude Include="..\..\common\quant.h" />
+    <ClInclude Include="..\..\common\rectangle.h" />
+    <ClInclude Include="..\..\common\set.h" />
+    <ClInclude Include="..\..\common\threadpool.h" />
+    <ClInclude Include="..\..\common\win32thread.h" />
+    <ClInclude Include="..\..\common\x86\dct.h" />
+    <ClInclude Include="..\..\common\x86\mc.h" />
+    <ClInclude Include="..\..\common\x86\pixel.h" />
+    <ClInclude Include="..\..\common\x86\predict.h" />
+    <ClInclude Include="..\..\common\x86\quant.h" />
+    <ClInclude Include="..\..\common\x86\util.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\common\x86\bitstream-a.asm" />
+    <None Include="..\..\common\x86\cabac-a.asm" />
+    <None Include="..\..\common\x86\const-a.asm" />
+    <None Include="..\..\common\x86\cpu-a.asm" />
+    <None Include="..\..\common\x86\dct-32.asm" />
+    <None Include="..\..\common\x86\dct-64.asm" />
+    <None Include="..\..\common\x86\dct-a.asm" />
+    <None Include="..\..\common\x86\deblock-a.asm" />
+    <None Include="..\..\common\x86\mc-a.asm" />
+    <None Include="..\..\common\x86\mc-a2.asm" />
+    <None Include="..\..\common\x86\pixel-32.asm" />
+    <None Include="..\..\common\x86\pixel-a.asm" />
+    <None Include="..\..\common\x86\predict-a.asm" />
+    <None Include="..\..\common\x86\quant-a.asm" />
+    <None Include="..\..\common\x86\sad-a.asm" />
+    <None Include="..\..\common\x86\sad16-a.asm" />
+    <None Include="..\..\common\x86\trellis-64.asm" />
+    <None Include="..\..\common\x86\x86inc.asm" />
+    <None Include="..\..\common\x86\x86util.asm" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

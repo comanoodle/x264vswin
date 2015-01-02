@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "x264_exe", "x264_exe\x264_exe.vcxproj", "{04F22352-EF42-49C1-B610-C6DC34D74985}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "common", "common\common.vcxproj", "{2B83D025-A07C-4BCB-8EA4-AA9D5CE70C19}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "encoder", "encoder\encoder.vcxproj", "{191EC381-EF6A-4217-B975-92F19D2AEDAC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{04F22352-EF42-49C1-B610-C6DC34D74985}.Debug|Win32.ActiveCfg = Debug|Win32
+		{04F22352-EF42-49C1-B610-C6DC34D74985}.Debug|Win32.Build.0 = Debug|Win32
+		{04F22352-EF42-49C1-B610-C6DC34D74985}.Release|Win32.ActiveCfg = Release|Win32
+		{04F22352-EF42-49C1-B610-C6DC34D74985}.Release|Win32.Build.0 = Release|Win32
+		{2B83D025-A07C-4BCB-8EA4-AA9D5CE70C19}.Debug|Win32.ActiveCfg = Debug|Win32
+		{2B83D025-A07C-4BCB-8EA4-AA9D5CE70C19}.Debug|Win32.Build.0 = Debug|Win32
+		{2B83D025-A07C-4BCB-8EA4-AA9D5CE70C19}.Release|Win32.ActiveCfg = Release|Win32
+		{2B83D025-A07C-4BCB-8EA4-AA9D5CE70C19}.Release|Win32.Build.0 = Release|Win32
+		{191EC381-EF6A-4217-B975-92F19D2AEDAC}.Debug|Win32.ActiveCfg = Debug|Win32
+		{191EC381-EF6A-4217-B975-92F19D2AEDAC}.Debug|Win32.Build.0 = Debug|Win32
+		{191EC381-EF6A-4217-B975-92F19D2AEDAC}.Release|Win32.ActiveCfg = Release|Win32
+		{191EC381-EF6A-4217-B975-92F19D2AEDAC}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
